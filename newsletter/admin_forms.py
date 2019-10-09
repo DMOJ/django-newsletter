@@ -146,7 +146,7 @@ class SubmissionAdminForm(forms.ModelForm):
 
     class Meta:
         model = Submission
-        fields = '__all__'
+        fields = ('newsletter', 'message', 'publish_date', 'publish', 'prepared', 'sent', 'sending')
 
     def clean_publish(self):
         """
